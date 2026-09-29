@@ -29,6 +29,6 @@
 /* Media query para celulares: sube el botón a 80px solo en pantallas chicas */
 @media (max-width: 768px) {
   .whatsapp-flotante {
-    bottom: 80px;
+    bottom: 70px;
   }
 }
