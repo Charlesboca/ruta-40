@@ -1,7 +1,7 @@
 .whatsapp-flotante {
   position: fixed;
   bottom: 25px; /* Valor por defecto para PC */
-  right: 25px;
+  right: 20px;
   background-color: #25d366; /* Color oficial de WhatsApp */
   color: #ffffff;
   width: 60px;
