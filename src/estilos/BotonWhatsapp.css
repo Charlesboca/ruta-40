@@ -1,6 +1,6 @@
 .whatsapp-flotante {
   position: fixed;
-  bottom: 25px;
+  bottom: 25px; /* Valor por defecto para PC */
   right: 25px;
   background-color: #25d366; /* Color oficial de WhatsApp */
   color: #ffffff;
@@ -24,4 +24,11 @@
   width: 35px;
   height: 35px;
   fill: #ffffff;
+}
+
+/* Media query para celulares: sube el botón a 80px solo en pantallas chicas */
+@media (max-width: 768px) {
+  .whatsapp-flotante {
+    bottom: 80px;
+  }
 }
