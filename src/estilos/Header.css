@@ -1,0 +1,37 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0b1120;
+  border-bottom: 1px solid #1e293b;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f59e0b;
+}
+
+.brand-text h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #f8fafc;
+}
+
+.brand-text span {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}

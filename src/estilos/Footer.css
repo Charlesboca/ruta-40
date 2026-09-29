@@ -1,0 +1,154 @@
+.footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  border-top: 1px solid #334155;
+  margin-top: 60px;
+  padding: 40px 20px 20px 20px;
+}
+
+/* Usamos Flexbox para alinear exactamente a los extremos */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+
+/* Contenedor del Logo con enlace */
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logo-container h3 {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  margin: 0;
+  transition: color 0.2s;
+  pointer-events: auto;
+}
+
+.footer-logo-container:hover h3 {
+  color: #f59e0b; /* Se pone dorado al pasar el cursor */
+}
+
+
+.redes-links {
+  display: flex;
+  gap: 15px;
+}
+
+.redes-links a {
+  color: #cbd5e1;
+  background-color: #1e293b;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid #475569;
+  transition: all 0.2s ease;
+}
+
+.redes-links a:hover {
+  background-color: #f59e0b;
+  color: #0f172a;
+  border-color: #f59e0b;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-dev {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.dev-link {
+  color: #f59e0b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.dev-link:hover {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Cambiamos a 'center' para que el título quede perfectamente centrado arriba de los botones */
+}
+
+.footer-redes h4 {
+  color: #f8fafc;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  text-align: center; /* Asegura que el texto no quede desfasado */
+}
+
+.redes-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el ícono y la palabra */
+  color: #cbd5e1;
+  background-color: #1e293b;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid #475569;
+  transition: all 0.2s ease;
+}
+
+.redes-links a:hover {
+  background-color: #f59e0b;
+  color: #0f172a;
+  border-color: #f59e0b;
+}
+
+/* Adaptación responsive para celulares */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-redes {
+    align-items: center;
+  }
+}

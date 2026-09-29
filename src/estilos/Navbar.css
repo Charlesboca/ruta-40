@@ -1,0 +1,48 @@
+.site-navbar {
+  background-color: #0f172a;
+  border-bottom: 2px solid #1e293b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* O space-around / flex-start según prefieras */
+  gap: 30px;
+  padding: 12px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #1e293b;
+}
+
+.admin-link {
+  background-color: #f59e0b;
+  color: #0f172a;
+}
+
+.admin-link:hover {
+  background-color: #d97706;
+  color: #0f172a;
+}
+
+.promo-nav-highlight {
+  color: #f59e0b !important;
+  font-weight: 700;
+}
+
+.promo-nav-highlight:hover {
+  color: #fbbf24 !important;
+}

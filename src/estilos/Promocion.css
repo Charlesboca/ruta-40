@@ -1,0 +1,110 @@
+.promos-page-container {
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promos-page-container h2 {
+  text-align: center;
+  color: #f59e0b;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.promos-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.grid-promos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card-promo {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.card-promo:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+}
+
+.badge-promo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #f59e0b;
+  color: #0f172a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.card-promo h3 {
+  color: #f8fafc;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.promo-desc {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.precio-container {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.precio-tachado {
+  color: #64748b;
+  text-decoration: line-through;
+  font-size: 0.95rem;
+}
+
+.precio-final {
+  color: #f59e0b;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.btn-comprar-promo {
+  background-color: #f59e0b;
+  color: #0f172a;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar-promo:hover {
+  background-color: #d97706;
+}
+
+.img-promo-card {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; /* Redondea los bordes superiores si tu tarjeta los tiene */
+  margin-bottom: 12px;
+}
