@@ -6,7 +6,7 @@
 
 .navbar-container {
   display: flex;
-  justify-content: center; /* O space-around / flex-start según prefieras */
+  justify-content: center;
   gap: 30px;
   padding: 12px 40px;
   max-width: 1200px;
@@ -45,4 +45,23 @@
 
 .promo-nav-highlight:hover {
   color: #fbbf24 !important;
+}
+
+/* ========================================== */
+/* MEDIA QUERY PARA CELULARES Y PANTALLAS CHICAS */
+/* ========================================== */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column; /* Apila los enlaces uno debajo de otro */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    gap: 10px;              /* Reduce la separación entre enlaces */
+    padding: 15px 20px;     /* Ajusta los márgenes laterales y verticales */
+  }
+
+  .nav-link {
+    width: 100%;            /* Hace que cada botón ocupe todo el ancho posible */
+    text-align: center;     /* Centra el texto del enlace */
+    padding: 10px 16px;     /* Da un área táctil más cómoda para celulares */
+  }
 }
